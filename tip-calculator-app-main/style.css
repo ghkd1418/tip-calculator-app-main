@@ -55,15 +55,29 @@ input[type="number"] {
 
 .select {
   list-style: none;
+  margin-top: 5px;
 }
 li {
-  border: solid 1px;
   display: inline-block;
-  width: 25%;
-  height: 15%;
-  margin-right: 10px;
-  margin-bottom: 10px;
   text-align: center;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+li input {
+  width: 100px;
+  height: 40px;
+  border: 0;
+  border-radius: 5px;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  font-size: large;
+}
+li input[value="Custom"] {
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+}
+#howmany {
+  width: 100%;
 }
 
 .amount {
