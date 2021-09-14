@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <title>calculator app</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 38%, 45%); }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div class="enter">
+      <div class="bill">Bill</div>
+      <div class="cover">
+        <input type="number" id="num">
+      </div>
+      <div class="tip">Select Tip %</div>
+      <dl class="%">
+        <li>5%</li>
+        <li>10%</li>
+        <li>15%</li>
+        <li>25%</li>
+        <li>50%</li>
+        <li>Custom</li>
+      </dl>
+      <div class="people">Number of People</div> 
+      <input id = "howmany" type="number">
+    </div>
+    
+    <div class="amount">
+      <span>Tip Amount</span>
+      <span>/ person</span>  
+    
+      <span>Total</span>
+      <span>/ person</span> 
+      
+      <input type="button" class="reset" value="Reset">
+    </div>
+  </div>
+</body>
+</html>
