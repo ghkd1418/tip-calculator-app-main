@@ -24,12 +24,15 @@ input[type="number"] {
 #num {
   background-image: url(images/icon-dollar.svg);
   width: 100%;
+  height: 45px;
 }
 
 #howmany {
   background-image: url(images/icon-person.svg);
+  height: 45px;
 }
 .calculator {
+  display: flex;
   background-color: hsl(0, 0%, 100%);
   border-radius: 20px;
   width: 1000px;
@@ -38,23 +41,20 @@ input[type="number"] {
 }
 
 .enter {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 50%;
   height: 100%;
   padding: 20px;
+  padding-right: 45px;
 }
-.bill {
-  margin-bottom: 25px;
-}
-
 .cover {
-  width: 100%;
   margin-top: 5px;
 }
 
 .select {
   list-style: none;
-  margin-top: 5px;
 }
 li {
   border: solid 1px;
@@ -67,11 +67,12 @@ li {
 }
 
 .amount {
-  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 50%;
   background-color: hsl(183, 100%, 15%);
-  height: 100%;
   border-radius: 20px;
   color: white;
-  padding: 20px;
+  padding: 40px;
 }
