@@ -90,3 +90,9 @@ li input[value="Custom"] {
   color: white;
   padding: 40px;
 }
+
+.reset {
+  height: 50px;
+  border-radius: 5px;
+  border: 0;
+}
