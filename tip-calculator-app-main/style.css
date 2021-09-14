@@ -23,6 +23,7 @@ input[type="number"] {
 }
 #num {
   background-image: url(images/icon-dollar.svg);
+  width: 100%;
 }
 
 #howmany {
@@ -39,14 +40,37 @@ input[type="number"] {
 .enter {
   display: inline-block;
   width: 50%;
-  height: 450px;
+  height: 100%;
+  padding: 20px;
+}
+.bill {
+  margin-bottom: 25px;
+}
+
+.cover {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.select {
+  list-style: none;
+  margin-top: 5px;
+}
+li {
+  border: solid 1px;
+  display: inline-block;
+  width: 25%;
+  height: 15%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .amount {
   float: right;
   width: 50%;
   background-color: hsl(183, 100%, 15%);
-  height: 450px;
+  height: 100%;
   border-radius: 20px;
   color: white;
   padding: 20px;
