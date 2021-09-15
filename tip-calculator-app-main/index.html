@@ -13,17 +13,13 @@
   <link rel="stylesheet" href="style.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 38%, 45%); }
-  </style>
 </head>
 <body>
   <div class="calculator">
     <div class="enter">
       <div class="bill">Bill
         <div class="cover">
-          <input type="number" id="num" min="0" dir="rtl">
+          <input type="number" id="num" min="0" >
         </div>
       </div>
       <div class="tip">Select Tip %
@@ -33,11 +29,11 @@
           <li><input type="button" value="15%"></li>
           <li><input type="button" value="25%"></li>
           <li><input type="button" value="50%"></li>
-          <li><input type="button" value="Custom" id="custom"></li>
+          <li><input type="text" dir="rtl" placeholder="Custom" id="custom"></li>
         </dl>
       </div>
       <div class="people">Number of People 
-        <input id = "howmany" type="number" min="0" dir="rtl">
+        <input id = "howmany" type="number" min="0">
       </div>
     </div>
 
