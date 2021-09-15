@@ -34,7 +34,7 @@ input[type="number"] {
   background-image: url(images/icon-person.svg);
   height: 45px;
 }
-#num,
+#num:focus,
 #howmany:focus {
   background-image: none;
 }
