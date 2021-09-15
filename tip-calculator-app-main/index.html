@@ -23,7 +23,7 @@
     <div class="enter">
       <div class="bill">Bill
         <div class="cover">
-          <input type="number" id="num">
+          <input type="number" id="num" min="0">
         </div>
       </div>
       <div class="tip">Select Tip %
@@ -37,16 +37,16 @@
         </dl>
       </div>
       <div class="people">Number of People 
-        <input id = "howmany" type="number">
+        <input id = "howmany" type="number" min="0">
       </div>
     </div>
 
     <div class="amount">
       <span>Tip Amount
-        <span><br>/ person</span>  
-      </span>
+        <span id="small"><br>/ person</span>  
+      </span> 
       <span>Total
-        <span><br>/ person</span> 
+        <span id="small"><br>/ person</span> 
       </span>
       <input type="button" class="reset" value="Reset">
     </div>

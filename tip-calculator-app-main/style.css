@@ -8,6 +8,8 @@ body {
   justify-content: center;
   min-height: 100vh;
   align-items: center;
+  font-weight: 600;
+  color: hsl(183, 100%, 15%);
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -21,6 +23,7 @@ input[type="number"] {
   border-style: none;
   border-radius: 5px;
 }
+
 #num {
   background-image: url(images/icon-dollar.svg);
   width: 100%;
@@ -30,6 +33,10 @@ input[type="number"] {
 #howmany {
   background-image: url(images/icon-person.svg);
   height: 45px;
+}
+#num,
+#howmany:focus {
+  background-image: none;
 }
 .calculator {
   display: flex;
@@ -71,6 +78,7 @@ li input {
   background-color: hsl(183, 100%, 15%);
   color: white;
   font-size: large;
+  font-weight: bold;
 }
 li input[value="Custom"] {
   background-color: hsl(189, 41%, 97%);
@@ -95,4 +103,12 @@ li input[value="Custom"] {
   height: 50px;
   border-radius: 5px;
   border: 0;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+  font-size: large;
+}
+
+#small {
+  font-size: small;
+  font-weight: 500;
 }
