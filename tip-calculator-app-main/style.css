@@ -34,9 +34,13 @@ input[type="number"] {
   background-image: url(images/icon-person.svg);
   height: 45px;
 }
-#num:focus,
-#howmany:focus {
-  background-image: none;
+#howmany:focus::-webkit-inner-spin-button,
+#howmany:focus::-webkit-outer-spin-button {
+  opacity: 0;
+}
+#num:focus::-webkit-inner-spin-button,
+#num:focus::-webkit-outer-spin-button {
+  opacity: 0;
 }
 .calculator {
   display: flex;
