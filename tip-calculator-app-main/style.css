@@ -126,6 +126,22 @@ li input:focus {
   font-size: small;
   font-weight: 500;
 }
+#amount {
+  float: right;
+  font-size: xx-large;
+  font-weight: 700;
+  color: #428e92;
+}
+[contentEditable="true"]:empty:not(:focus):before {
+  content: attr(data-text);
+  color: #428e92;
+}
+#total {
+  float: right;
+  font-size: xx-large;
+  font-weight: 700;
+}
+
 .reset {
   height: 50px;
   border-radius: 5px;
@@ -133,4 +149,7 @@ li input:focus {
   font-weight: 700;
   color: hsl(183, 100%, 15%);
   font-size: large;
+}
+.reset:hover {
+  background-color: #428e92;
 }
