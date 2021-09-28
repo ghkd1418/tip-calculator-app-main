@@ -8,11 +8,20 @@
 */
 
 function PrintPrice() { 
-    const price = document.getElementById(`num`).value;
-    document.getElementById(`amount`).innerText = price;
+    let price = document.getElementById(`num`).value;
+    let save = price;
+    document.getElementById(`amount`).innerText = save;
+    return save;
 }
 
-function five_per() {
-    let amount
-    const per = 
-}
+
+// function division() {
+//     let people = document.getElementById(`howmany`);
+//     people.value = save.value / num
+// }
+
+// function culculation() {
+//     let amount = eval(save.value);
+//     document.getElementById(`amount`).value = amount;
+// }
+
