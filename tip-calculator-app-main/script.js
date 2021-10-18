@@ -21,7 +21,12 @@ function amount(tip) {
     document.getElementById(`amount`).innerText = save;
 }
 
-
+function AmountPerPeople() {
+    let people = document.getElementById(`howmany`).value;
+    let price = document.getElementById(`num`).value;
+    let save = price/people;
+    document.getElementById(`amount`).innerText = save;
+}
 
 // function division() {
 //     let people = document.getElementById(`howmany`);

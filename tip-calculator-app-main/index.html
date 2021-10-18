@@ -29,11 +29,11 @@
           <li><input type="button" value="15%" onclick="amount(0.15)"></li>
           <li><input type="button" value="25%" onclick="amount(0.25)"></li>
           <li><input type="button" value="50%" onclick="amount(0.5)"></li>
-          <li><input type="text" dir="rtl" placeholder="Custom" id="custom" onkeyup="tipAmount()"></li>
+          <li><input type="text" dir="rtl" placeholder="Custom" id="custom" onkeyup="amount(value)"></li>
         </dl>
       </div>
       <div class="people">Number of People 
-        <input id = "howmany" type="number" min="0">
+        <input id = "howmany" type="number" min="0" onkeyup="AmountPerPeople(value)">
       </div>
     </div>
     
