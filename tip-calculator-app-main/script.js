@@ -6,13 +6,7 @@
     tip amount per person = price * 0.tip / person
     total per person = {price+(price* 0.tip)/person
 */
-
-// function PrintPrice() { 
-//     let price = document.getElementById(`num`).value;
-//     let save = price;
-//     document.getElementById(`amount`).innerText = save;
-//     return save;
-// }
+// custom 입력시 퍼센테이지로 입력되야함 ㅜㅜ
 
 
 function amount(tip) {
@@ -28,13 +22,12 @@ function AmountPerPeople() {
     document.getElementById(`amount`).innerText = save;
 }
 
-// function division() {
-//     let people = document.getElementById(`howmany`);
-//     people.value = save.value / num
-// }
+// total per person = {price+(price* 0.tip)/person
 
-// function culculation() {
-//     let amount = eval(save.value);
-//     document.getElementById(`amount`).value = amount;
-// }
+function total() {
+    let price = document.getElementById(`num`).value;
+    let people = document.getElementById(`howmany`).value;
+    let save = amount(tip) + price / people;
+    document.getElementById(`total`).innerText = save;
+}
 
