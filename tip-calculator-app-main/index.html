@@ -19,24 +19,24 @@
     <div class="enter">
       <div class="bill">Bill
         <div class="cover">
-          <input type="number" id="num" min="0" onkeyup="PrintPrice()">
+          <input type="number" id="num" min="0">
         </div>
       </div>
       <div class="tip">Select Tip %
         <dl class="select">
-          <li><input type="button" value="5%" onclick="mul(0.05)"></li>
-          <li><input type="button" value="10%" onclick="mul(0.1)"></li>
-          <li><input type="button" value="15%" onclick="mul(0.15)"></li>
-          <li><input type="button" value="25%" onclick="mul(0.25)"></li>
-          <li><input type="button" value="50%" onclick="mul(0.5)"></li>
-          <li><input type="text" dir="rtl" placeholder="Custom" id="custom"></li>
+          <li><input type="button" value="5%" onclick="amount(0.05)"></li>
+          <li><input type="button" value="10%" onclick="amount(0.1)"></li>
+          <li><input type="button" value="15%" onclick="amount(0.15)"></li>
+          <li><input type="button" value="25%" onclick="amount(0.25)"></li>
+          <li><input type="button" value="50%" onclick="amount(0.5)"></li>
+          <li><input type="text" dir="rtl" placeholder="Custom" id="custom" onkeyup="tipAmount()"></li>
         </dl>
       </div>
       <div class="people">Number of People 
         <input id = "howmany" type="number" min="0">
       </div>
     </div>
-
+    
     <div class="amount">
       <span>Tip Amount
         <span id="amount" contenteditable=true data-text="$0.00"></span>

@@ -7,12 +7,20 @@
     total per person = {price+(price* 0.tip)/person
 */
 
-function PrintPrice() { 
+// function PrintPrice() { 
+//     let price = document.getElementById(`num`).value;
+//     let save = price;
+//     document.getElementById(`amount`).innerText = save;
+//     return save;
+// }
+
+
+function amount(tip) {
     let price = document.getElementById(`num`).value;
-    let save = price;
+    let save = price * tip;
     document.getElementById(`amount`).innerText = save;
-    return save;
 }
+
 
 
 // function division() {
