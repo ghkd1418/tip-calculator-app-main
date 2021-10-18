@@ -11,16 +11,11 @@
 
 function amount(tip) {
     let price = document.getElementById(`num`).value;
-    let save = price * tip;
+    let people = document.getElementById(`howmany`).value;
+    let save = price*tip/people;
     document.getElementById(`amount`).innerText = save;
 }
 
-function AmountPerPeople() {
-    let people = document.getElementById(`howmany`).value;
-    let price = document.getElementById(`num`).value;
-    let save = price/people;
-    document.getElementById(`amount`).innerText = save;
-}
 
 // total per person = {price+(price* 0.tip)/person
 
