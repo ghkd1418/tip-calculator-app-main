@@ -31,6 +31,12 @@ input[type="number"] {
   text-align: right;
 }
 
+div error {
+  display: inliine;
+  color: red;
+  opacity: 0;
+}
+
 #howmany {
   background-image: url(images/icon-person.svg);
   height: 45px;
@@ -156,4 +162,8 @@ li input:focus {
 }
 .reset:hover {
   background-color: #a5f7fc;
+}
+.flag {
+  position: absolute;
+  bottom: 0;
 }

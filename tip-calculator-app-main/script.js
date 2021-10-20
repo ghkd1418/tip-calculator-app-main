@@ -25,3 +25,22 @@ function transPerCustom(custom) {
     let percustom = parseInt(custom) / 100;
     amount(percustom);          //percustom가 result와 save에 들어감.
 }
+
+// let target = document.querySelector(`error`)
+// let person = document.getElementById(`howmany`).value;
+// if (person == 0) {
+//     document.querySelector("error").style.opacity = "1"
+// }else{
+//     document.querySelector("error").style.opacity = "0"
+// }
+
+function changeStyle() {
+    let person = document.getElementById(`howmany`).value;
+    if (person == 0) {
+        document.querySelector("error").style.opacity = "1"
+        document.querySelector("#howmany").style.borderColor = "red"
+    }else{
+        document.querySelector("error").style.opacity = "0"
+        document.querySelector("#howmany").style.borderColor = ""
+    }
+}
