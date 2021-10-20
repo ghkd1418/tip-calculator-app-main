@@ -1,28 +1,27 @@
-/*  
-    사용자가 bill 을 입력 -> price
-    select to tip (5% => 0.05)  -> tip
-    사람수를 입력하면 -> person
-
-    tip amount per person = price * 0.tip / person
-    total per person = {price+(price* 0.tip)/person
-*/
-// custom 입력시 퍼센테이지로 입력되야함 ㅜㅜ
-
-
+// tip amount per person = bill * tip / person
+// total per person = bill/person + result
 function amount(tip) {
-    let price = document.getElementById(`num`).value;
-    let people = document.getElementById(`howmany`).value;
-    let save = price*tip/people;
-    document.getElementById(`amount`).innerText = save;
+    let bill = document.getElementById(`num`).value;
+    let person = document.getElementById(`howmany`).value;
+    let result = bill*tip/person;
+    let save = bill/person + result;
+
+    document.getElementById(`amount`).innerText = `$` + result.toFixed(2);
+    document.getElementById(`total`).innerText = `$` + save.toFixed(2);
 }
+//reset버튼
+let resetBtn = document.querySelector(`.reset`);    
+    resetBtn.addEventListener("click", click);
 
-
-// total per person = {price+(price* 0.tip)/person
-
-function total() {
-    let price = document.getElementById(`num`).value;
-    let people = document.getElementById(`howmany`).value;
-    let save = amount(tip) + price / people;
-    document.getElementById(`total`).innerText = save;
+function click() {
+    document.getElementById(`howmany`).value = null;
+    document.getElementById(`num`).value = null;
+    document.getElementById(`custom`).value = null;
+    document.getElementById(`amount`).innerText = null;
+    document.getElementById(`total`).innerText = null;
 }
-
+// custom 을 퍼센트로 변환
+function transPerCustom(custom) {
+    let percustom = parseInt(custom) / 100;
+    amount(percustom);          //percustom가 result와 save에 들어감.
+}

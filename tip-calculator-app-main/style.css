@@ -87,13 +87,17 @@ li input {
   background-color: hsl(189, 41%, 97%);
   color: hsl(183, 100%, 15%);
 }
+#custom[type="number"]::-webkit-inner-spin-button,
+#custom[type="number"]::-webkit-outer-spin-button {
+  opacity: 0;
+}
 #custom::placeholder {
   text-align: center;
   color: hsl(183, 100%, 15%);
 }
 
 li input:focus {
-  background-color: #428e92;
+  background-color: #a5f7fc;
   color: hsl(183, 100%, 15%);
 }
 #custom:focus {
@@ -110,7 +114,6 @@ li input:focus {
   font-size: large;
   font-weight: bold;
 }
-
 .amount {
   display: flex;
   flex-direction: column;
@@ -130,16 +133,17 @@ li input:focus {
   float: right;
   font-size: xx-large;
   font-weight: 700;
-  color: #428e92;
+  color: #a5f7fc;
 }
 [contentEditable="true"]:empty:not(:focus):before {
   content: attr(data-text);
-  color: #428e92;
+  color: #a5f7fc;
 }
 #total {
   float: right;
   font-size: xx-large;
   font-weight: 700;
+  color: #a5f7fc;
 }
 
 .reset {
@@ -151,5 +155,5 @@ li input:focus {
   font-size: large;
 }
 .reset:hover {
-  background-color: #428e92;
+  background-color: #a5f7fc;
 }
