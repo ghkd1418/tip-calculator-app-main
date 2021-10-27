@@ -11,7 +11,6 @@ body {
   font-weight: 600;
   color: hsl(183, 100%, 15%);
 }
-
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   opacity: 1;
@@ -34,6 +33,7 @@ input[type="number"] {
 div error {
   display: inliine;
   color: red;
+  float: right;
   opacity: 0;
 }
 
@@ -65,11 +65,8 @@ div error {
   padding: 20px;
   padding-right: 45px;
 }
-.cover {
-  margin-top: 5px;
-}
 
-.select {
+.cover {
   list-style: none;
   margin-top: 5px;
 }
@@ -166,4 +163,67 @@ li input:focus {
 .flag {
   position: absolute;
   bottom: 0;
+}
+
+@media screen and (max-width: 376px) {
+  .flag {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-top: 30px;
+  }
+  .flag img {
+    width: 25px;
+    height: 25px;
+  }
+  .calculator {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    bottom: 0;
+    overflow: auto;
+  }
+  .enter {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0;
+  }
+  .bill {
+    width: 100%;
+  }
+  .tip dl {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    display: flex;
+  }
+  .cover li input {
+    width: 150px;
+  }
+  .amount {
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+  }
+  dl {
+    margin: 0;
+  }
+  div error {
+    opacity: 1;
+    float: right;
+  }
+  .people {
+    width: 100%;
+  }
 }
