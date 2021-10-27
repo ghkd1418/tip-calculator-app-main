@@ -164,19 +164,23 @@ li input:focus {
   position: absolute;
   bottom: 0;
 }
+.flag img:not(:first-child) {
+  margin-left: 20px;
+}
 
 @media screen and (max-width: 376px) {
   .flag {
     position: absolute;
     top: 0;
-    display: flex;
-    flex-direction: row;
     align-content: center;
     margin-top: 30px;
   }
   .flag img {
-    width: 25px;
-    height: 25px;
+    width: 23px;
+    height: 23px;
+  }
+  .flag img:not(:first-child) {
+    margin-left: 6px;
   }
   .calculator {
     flex-direction: column;
