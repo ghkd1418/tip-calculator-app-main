@@ -224,7 +224,7 @@ li input:focus {
     margin: 0;
   }
   div error {
-    opacity: 1;
+    opacity: 0;
     float: right;
   }
   .people {
